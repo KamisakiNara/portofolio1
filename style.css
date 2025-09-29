@@ -1,0 +1,119 @@
+body {
+    transition: background 0.4s, color 0.4s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  section { padding: 100px 0; }
+  
+  /* Navbar */
+  .navbar {
+    background: rgba(13, 110, 253, 0.8);
+    backdrop-filter: blur(10px);
+    transition: background 0.4s;
+  }
+  .navbar a {
+    color: white !important;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  .navbar a:hover { color: #ffd700 !important; }
+  
+  /* Hero */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(-45deg, #0d6efd, #6610f2, #ff4081, #00c9a7);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
+  }
+  .profile-img:hover { transform: scale(1.08) rotate(3deg); }
+  
+  .btn-custom {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+    border-radius: 50px;
+    padding: 10px 30px;
+  }
+  .btn-custom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4);
+  }
+
+  .skill-card {
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 150px;
+  }
+  
+  /* Hover effect */
+  .skill-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* HTML */
+  .skill-card.html {
+    background: linear-gradient(135deg, #f16529, #e34c26);
+  }
+  
+  /* CSS */
+  .skill-card.css {
+    background: linear-gradient(135deg, #2965f1, #1e40ff);
+  }
+  
+  /* PHP & MySQL */
+  .skill-card.php {
+    background: linear-gradient(135deg, #7472c9, #6e5494);
+  }
+  
+  /* Icon styling (gunakan fontawesome) */
+  .skill-card i {
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover i {
+    transform: rotate(15deg) scale(1.2);
+  }  
+  
+  /* Project cards */
+  .project-card { border: none; border-radius: 20px; overflow: hidden; transition: all 0.3s ease-in-out; }
+  .project-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+  .project-card img { height: 200px; object-fit: cover; }
+  
+  /* Section titles */
+  h2.fw-bold { position: relative; display: inline-block; margin-bottom: 20px; }
+  h2.fw-bold::after { content: ""; position: absolute; width: 50%; height: 3px; background: #0d6efd; left: 25%; bottom: -8px; border-radius: 2px; }
+  
+  /* Cards */
+  .card { transition: transform 0.3s ease; border-radius: 15px; }
+  .card:hover { transform: translateY(-5px); }
+  .card img { object-fit: cover; height: 100%; border-radius: 15px 0 0 15px; }
+  
+  /* Dark Mode */
+  body.dark-mode { background: #121212; color: #e0e0e0; }
+  body.dark-mode .navbar { background: rgba(33, 33, 33, 0.9); }
+  body.dark-mode .navbar a { color: #e0e0e0 !important; }
+  body.dark-mode .navbar a:hover { color: #ffd700 !important; }
+  body.dark-mode section.bg-light { background: #1e1e1e !important; }
+  body.dark-mode .card { background: #1e1e1e; color: #e0e0e0; }
+  body.dark-mode .list-group-item { background: #1e1e1e; color: #e0e0e0; }
+  body.dark-mode footer { background: #000 !important; }
+  
