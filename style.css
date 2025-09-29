@@ -97,6 +97,29 @@ body {
   .project-card { border: none; border-radius: 20px; overflow: hidden; transition: all 0.3s ease-in-out; }
   .project-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
   .project-card img { height: 200px; object-fit: cover; }
+
+  /* Achievements / Certificates */
+  .achievement-card {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .achievement-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+
+  .achievement-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .achievement-card:hover img {
+    transform: scale(1.05) rotate(1deg);
+  }
   
   /* Section titles */
   h2.fw-bold { position: relative; display: inline-block; margin-bottom: 20px; }
